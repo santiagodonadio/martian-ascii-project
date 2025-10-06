@@ -5,7 +5,7 @@ export default function App(){
     return (
 
         <div className="center-container">
-            <h1>Heading test</h1>
+            <h1>Changing heading</h1>
         </div>
 
     );

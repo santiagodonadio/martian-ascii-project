@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./AsciiConverter.css";
 
 function AsciiConverter() {
 
@@ -25,7 +26,7 @@ function AsciiConverter() {
             rows={5}
             cols={20}
         ></textarea>
-        <p>Ascii Codes: {asciiCodes}</p>
+        <p className="ascii-text">ASCII Codes: {asciiCodes}</p>
     </div>);
 
 }

@@ -37,14 +37,6 @@ const data = [
         question: "Hexadecimal Scene",
         answer: "https://www.youtube.com/watch?v=NttUBB98zg4&t=154s",
     },
-    {
-        question: "Question 2",
-        answer: "This is the answer2",
-    },
-    {
-        question: "Question 3",
-        answer: "This is the answer3",
-    },
 ]
 
 export default AccordionPart;

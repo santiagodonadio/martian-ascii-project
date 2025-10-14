@@ -1,34 +1,19 @@
 import React, {useState} from "react";
+import AsciiConverter from "./AsciiConverter";
+import { IMAGES } from "./assets/images";
 import "./App.css";
 
-function AsciiConverter() {
 
-    const [text, setText] = useState("HOWALIVE");
-
-    const handleChange = (event) => {
-        setText(event.target.value)
-    }
-
-    const asciiMap = new Map();
-    for(let i = 32; i <= 126; i++){
-        asciiMap.set(String.fromCharCode(i), i)
-    }
-
-    const asciiCodes = text
-        .split("")
-        .map((char) => asciiMap.get(char) || "n/a")
-        .join(" ");
-
-    return(<div>
-        <textarea
-            value={text}
-            onChange={handleChange}
-            rows={5}
-            cols={20}
-        ></textarea>
-        <p>Ascii Codes: {asciiCodes}</p>
-    </div>);
-
+function App(){
+    return (
+        <div className="container">
+            <img src={IMAGES.asciiTable} alt="Picture of an ASCII Table"/>
+            <h1>Inspired by <em>The Martian</em></h1>
+            <AsciiConverter/>
+            <img src={IMAGES.decoding} alt="Picture of Matt Damon's character decoding the numbers"/>
+            <img src={IMAGES.howAlive} alt="Picture of how Alive decodd"/>
+        </div>
+    )
 }
 
-export default AsciiConverter;
+export default App;

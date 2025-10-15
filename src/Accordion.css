@@ -34,14 +34,3 @@
     max-height: 9999px;
     transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
-
-.content img {
-    width: 100%;
-    cursor: zoom-in;
-    object-fit: contain;
-}
-
-.content img:hover {
-    transform: scale(3.5);
-
-}

@@ -12,6 +12,8 @@ function App(){
             <div className="main">
             <AccordionPart/>
                 <h1>Inspired by <em>The Martian</em></h1>
+                <h2>How NASA Communicated with Mark Watney:<br/>Translating English to Hex</h2>
+                <br/>
                 <AsciiConverter/>
             </div>
         </section>

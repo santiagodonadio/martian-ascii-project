@@ -24,7 +24,7 @@ function AccordionPart (){
                         </div>
                         <div className={ selected === i ? 'content show': 'content'}>
                             {typeof item.answer === "string" && item.answer.startsWith("http") ? (
-                                <a href={item.answer} target="_blank" rel="noreferrer">Watch Scene</a>
+                                <a href={item.answer} target="_blank" rel="noreferrer">Click Here to Watch Scene</a>
                             ): (
                                 <img src={item.answer} alt={item.question} style={{ maxWidth: '100%' }} />
                             )}
@@ -42,7 +42,7 @@ const data = [
         answer: "https://www.youtube.com/watch?v=NttUBB98zg4&t=154s",
     },
     {
-        question: "Matt Damon with ASCII Table",
+        question: "Photo of ASCII Table in Movie",
         answer: IMAGES.asciiTable,
     }
 ]

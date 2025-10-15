@@ -3,7 +3,7 @@ import "./AsciiConverter.css";
 
 function AsciiConverter() {
 
-    const [text, setText] = useState("type here");
+    const [text, setText] = useState("");
 
     const handleChange = (event) => {
         setText(event.target.value)
@@ -126,8 +126,9 @@ function AsciiConverter() {
             onChange={handleChange}
             rows={5}
             cols={20}
+            placeholder="type here"
         ></textarea>
-        <p className="ascii-text">ASCII Codes: {asciiCodes}</p>
+        <p className="ascii-text"><br/>ASCII Codes: {asciiCodes}</p>
     </div>);
 
 }

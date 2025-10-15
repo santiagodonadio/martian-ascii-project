@@ -3,7 +3,7 @@ import "./AsciiConverter.css";
 
 function AsciiConverter() {
 
-    const [text, setText] = useState("HOWALIVE");
+    const [text, setText] = useState("type here");
 
     const handleChange = (event) => {
         setText(event.target.value)

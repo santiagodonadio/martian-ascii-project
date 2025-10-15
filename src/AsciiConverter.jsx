@@ -128,7 +128,7 @@ function AsciiConverter() {
             cols={20}
             placeholder="type here"
         ></textarea>
-        <p className="ascii-text"><br/>ASCII Codes: {asciiCodes}</p>
+        <p className="ascii-text"><br/>Hex Codes: {asciiCodes}</p>
     </div>);
 
 }
